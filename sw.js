@@ -3,7 +3,7 @@
  * - Demais arquivos (ícones, manifest, PeerJS): cache-first com atualização em segundo plano
  * Ao publicar uma versão com mudanças em ícones/manifest, incremente CACHE_VERSION.
  */
-const CACHE_VERSION = 'sobrecarga2x-v2';
+const CACHE_VERSION = 'sobrecarga2x-v3';
 const PEERJS_URL = 'https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js';
 const APP_SHELL = [
   './',
