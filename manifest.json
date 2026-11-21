@@ -1,0 +1,19 @@
+{
+  "name": "Sobrecarga 2X! — Jogo de Cartas",
+  "short_name": "Sobrecarga 2X",
+  "description": "Jogo de cartas de escalada numérica com combos 2X, solo contra bots ou online com amigos.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f0722",
+  "theme_color": "#1e1b4b",
+  "lang": "pt-BR",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
