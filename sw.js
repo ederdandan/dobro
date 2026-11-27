@@ -3,7 +3,7 @@
  * - Demais arquivos (ícones, manifest, PeerJS): cache-first com atualização em segundo plano
  * Ao publicar uma versão com mudanças em ícones/manifest, incremente CACHE_VERSION.
  */
-const CACHE_VERSION = 'sobrecarga2x-v3';
+const CACHE_VERSION = 'sobrecarga2x-v4';
 const PEERJS_URL = 'https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js';
 const APP_SHELL = [
   './',
@@ -34,6 +34,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Métricas (GoatCounter): sempre pela rede, nunca no cache.
+  if (/goatcounter\.com|gc\.zgo\.at/.test(event.request.url)) return;
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
